@@ -1,0 +1,25 @@
+# requirements.txt - generated from project imports
+# Assumptions:
+# - import names like `from dotenv import ...` map to the `python-dotenv` package
+# - `langchain_core`, `langchain_openai`, and `langchain_ollama` are distributed as
+#   `langchain-core`, `langchain-openai`, and `langchain-ollama` on PyPI (adjust if different)
+# - Versions are conservative lower bounds; change pins to match your environment if needed
+
+python-dotenv>=1.0.0
+transformers>=4.34.0
+torch>=2.0.0
+huggingface-hub>=0.14.1
+
+# LangChain modular packages (may be part of a single `langchain` distribution in some installs)
+langchain-core>=0.1.0
+langchain-openai>=0.1.0
+langchain-ollama>=0.1.0
+
+# HTTP / async / utilities that are commonly required by the above packages
+httpx>=0.28.1
+anyio>=4.12.0
+tqdm>=4.67.1
+
+# If you prefer to reproduce the exact environment in `env/`, you can also export with:
+#   pip freeze > requirements.txt
+

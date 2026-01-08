@@ -1,0 +1,44 @@
+# Ignore virtual environment folder
+/env/
+.venv/
+venv/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Environment variables file (keep secrets out of VCS)
+.env
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Pytest cache
+.pytest_cache/
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# macOS
+.DS_Store
+
+# MyPy
+.mypy_cache/
+
+# Logs
+*.log
+
+# Misc
+coverage.xml
+htmlcov/
+
