@@ -2,7 +2,7 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 
-prompt = PromptTemplate.from_template("How to say {input} in {output_language}:\n")
+prompt = PromptTemplate.from_template("write a story on {story} based on Yedu Chepala Katha in telugu:\n")
 
 load_dotenv()
 
@@ -12,6 +12,6 @@ llm = ChatOpenAI(
 )
 
 chain = prompt | llm
-response = chain.invoke({"output_language": "Spanish", "input": "Good bye.", })
+response = chain.invoke({"story": "fish"})
 
 print(response.content)
